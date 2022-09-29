@@ -478,6 +478,27 @@ footer {
   padding-right: 2vw;
   margin: 0 20px;
 }
+.confirmation_submit {
+  display: none; 
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 50vh;
+  overflow: auto;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #232323;
+  color: #fff;
+  transform: translate(70%, 50%);
+}
+.confirmation_submit p {
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 800px) {
   .hero-section {
     display: block;
