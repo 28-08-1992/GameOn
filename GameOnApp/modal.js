@@ -41,6 +41,7 @@ const regBirthdate =
 //-----------fonction generique pour prenom , nom , email -------
 
 function checkFirstName() {
+   
   if (firstname.value.trim() === "" || !firstname.value.match(regName)) {
     firstname.parentElement.setAttribute("data-error-visible", true);
     firstname.style.border = "3px solid #e544858";
@@ -76,7 +77,7 @@ function checkEmail() {
 }
 
 function checkBirthDate() {
-  
+ 
   if (birthDate.value.trim() === "" || !birthDate.value.match(regBirthdate)) {
     birthDate.parentElement.setAttribute("data-error-visible", true);
     birthDate.style.border = "3px solid #e544858";
@@ -184,6 +185,7 @@ const resetForm = () => {
   document.querySelector('#form').reset();
 };
 
+
 function confirmationSubmit() {
   modalbg.style.display = "none";
   confirmation[0].style.display = "flex";
@@ -192,8 +194,15 @@ function confirmationSubmit() {
 
 //---------close message de remerciement---------
 
+const closeMessage = document.querySelector(".confirmation_submit .close");
+
 function closeOK() {
   confirmation[0].style.display = "none";
 }
 
 close_btn_confirmation.addEventListener("click", closeOK);
+
+
+closeMessage.addEventListener("click", closeOK);
+
+

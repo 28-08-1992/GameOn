@@ -499,6 +499,16 @@ footer {
   margin-bottom: 20px;
 }
 
+
+@media screen and (max-width: 480px) {
+  .confirmation_submit p {
+    font-size: medium;
+  }
+  .confirmation_submit {
+    height: 30vh;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .hero-section {
     display: block;
@@ -516,7 +526,7 @@ footer {
     display: none;
   }
   .hero-headline {
-    font-size: 4.5rem;
+    font-size: 3rem;
     white-space: normal;
   }
   .hero-text {
@@ -535,6 +545,12 @@ footer {
   .copyrights {
     margin-top: 50px;
     text-align: center;
+  }
+  .confirmation_submit p {
+    margin: 3%;
+  }
+  .confirmation_submit .btn-submit {
+    padding: 5%;
   }
 }
 
